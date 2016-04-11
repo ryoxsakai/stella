@@ -16,3 +16,14 @@ The system collected the money via **Webpay API**.
 This API supported **Credit Card** use (and supported either **Visa** or **Master Card**).
 The subscription systems like this site maintain the good-fluided cashflow.
 Users paid monthly via their credit cards.
+
+## Screenshot of index.php
+
+![screenshot](https://github.com/ryoxsakai/stella/blob/master/screenshot.png?raw=true)
+
+## Language
+
+- Markup Language: HTML5 and CSS3
+- Client side Language: javascript and jQuery(with ajax)
+- Server side Language: PHP
+- SQL: Mysql
