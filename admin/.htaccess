@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?mode=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?mode=$1
+# BEGIN heteml
+# 注意:
+# このブロックはヘテムルのコントロールパネルによって作成されました。
+# # BEGIN heteml 〜 # END heteml は編集を行わないようにご注意ください。
+
+AuthUserFile /home/sites/heteml/users/s/u/g/sugarless/web/service/new_stella/admin/.htpasswd
+AuthGroupFile /dev/null
+AuthName "admin"
+AuthType Basic
+require valid-user
+# END heteml

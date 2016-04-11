@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?mode=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?mode=$1
+RewriteRule ^list/del/([a-zA-Z0-9_-]+)$ index.php?mode=list&del=$1
+RewriteRule ^list/del/([a-zA-Z0-9_-]+)/$ index.php?mode=list&del=$1
+RewriteRule ^list/test/([a-zA-Z0-9_-]+)$ index.php?mode=list&test=$1
+RewriteRule ^list/test/([a-zA-Z0-9_-]+)/$ index.php?mode=list&test=$1
+RewriteRule ^list/delmail/([a-zA-Z0-9_-]+)$ index.php?mode=list&delmail=$1
+RewriteRule ^list/delmail/([a-zA-Z0-9_-]+)/$ index.php?mode=list&delmail=$1
+RewriteRule ^list/from/([a-zA-Z0-9_-]+)$ index.php?mode=list&from=$1
+RewriteRule ^list/from/([a-zA-Z0-9_-]+)/$ index.php?mode=list&from=$1
+RewriteRule ^list/from/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?mode=list&from=$1&code=$2
+RewriteRule ^list/from/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?mode=list&from=$1&code=$2
+RewriteRule ^admin/([a-zA-Z0-9_-]+)$ admin/index.php?mode=$1
+RewriteRule ^admin/([a-zA-Z0-9_-]+)/$ admin/index.php?mode=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?mode=$1&code=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?mode=$1&code=$2

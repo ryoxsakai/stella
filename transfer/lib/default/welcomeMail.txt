@@ -1,0 +1,39 @@
+-----------------------------------
+
+「[TITLE]」ご登録完了メール
+
+-----------------------------------
+
+[NAME]さん、こんにちは！
+
+この度は「[TITLE]」にご登録いただきありがとうございます。
+
+-----------------------------------
+
+●ソーシャルメディアでも応援してね！●
+
+twitter  : http://twitter.com/stella_mail/
+Facebook : http://facebook.com/stella_mail/
+
+-----------------------------------
+
+●アドレスの変更などはこちらから●
+http://client.stella-mail.com/[USERID]/[VERIFIER]/
+
+●バックナンバーはこちらから●
+http://backnumber.stella-mail.com/[USERID]/
+
+●メルマガの感想はこちらにお送りください●
+http://message.stella-mail.com/[USERID]/[VERIFIER]/
+
+●[NAME]さんからお友達に紹介するときはコチラのアドレスを教えてあげてください●
+http://entry.stella-mail.com/[USERID]/[VERIFIER]/
+
+-----------------------------------
+
+このサービスはメルマガスタンド「stella」にて運営されています。
+
+http://stella-mail.com/
+
+2013 Copyright© stella & SUGARLESS imagination,
+All rights reserved.

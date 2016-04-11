@@ -1,0 +1,751 @@
+/* 1: Layout */
+
+body{
+  margin:0;
+  padding:0;
+  text-align:center;
+  color:#555;
+  font-family:sans-serif;
+}
+
+.wrap{
+  margin:0 auto;
+  text-align:left;
+  max-width:960px;
+  width:90%;
+  min-width:680px;
+}
+
+.parts{
+  padding:30px 0;
+}
+
+.parts p{
+  line-height:2em;
+}
+
+.parts img{
+  max-width:100%;
+}
+
+.parts h3{
+  background:white;
+  margin:20px 0 40px 0;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid whitesmoke;
+  text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+  letter-spacing:3px;
+  line-height:2em;
+}
+
+.parts h3 i{
+  display:block;
+  font-size:300%;
+  margin:10px;
+}
+
+.title{
+  text-align:left;
+}
+
+.title a{
+  text-decoration:none;
+}
+
+ul#menubar{
+  margin:0;
+  padding:0;
+  text-align:left;
+  background:#ddd;
+  display:inline-block;
+}
+
+ul#menubar li{
+  margin:0 5px 0 0;
+  padding:4px 0 0 0;
+  font-size:12px;
+  display:inline-block;
+  /display:inline;/*IE7*/
+  /zoom:1;/*IE7*/
+  background-position:0 0.2em;
+  zoom:1;
+}
+
+ul#menubar li a{
+  margin:0;
+  padding-bottom:4px;
+  -webkit-transition:border-bottom 0.3s ease-in;
+  border-bottom:2px solid transparent;
+  color:#333;
+  display:block;
+}
+
+ul#menubar li a:hover{
+  border-bottom:2px solid darkorange;
+  color:darkorange;
+  text-shadow:0 1px 1px rgba(255, 255, 255, 0.5);
+  cursor:pointer; /* temp */
+}
+
+#menubarid{
+  padding:4px 0;
+  text-align:right;
+  font-size:12px;
+}
+
+#topboard{
+  margin-bottom:20px;
+  max-width:100%;
+}
+
+#parts_HEAD{
+  position:relative;
+  width:100%;
+  background:url('http://free.stella-mail.com/picture/colorstripe.png') fixed;
+  box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+}
+
+#parts_HEAD p{
+  color:black;
+  text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 70px #fff;
+}
+
+#parts_PRICE{
+  width:100%;
+  background:#ffeddb;
+  color:darkorange;
+}
+
+#parts_REASON{
+  width:100%;
+  background:#dbffdb;
+  color:seagreen;
+  box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+}
+
+#parts_REASON p{
+  margin-top:125px;
+}
+
+#parts_FUNCTION{
+  width:100%;
+  background:#dbdbff;
+  color:darkslateblue;
+}
+
+#parts_SIGNUP{
+  width:100%;
+  background:url('http://free.stella-mail.com/picture/cutestripe.png') fixed;
+  box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+  color:hotpink;
+}
+
+#parts_LOGIN{
+  z-index:1000;
+  position:relative;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  background:url('http://free.stella-mail.com/picture/quietstripe.png');
+  box-shadow:0 0 10px rgba(100,100,100,0.8) inset;
+  -webkit-transition-property:max-height;
+  -webkit-transition-duration:1s;
+  -webkit-transition-timing-function:ease-in-out;
+}
+
+#parts_LOGIN p{
+  color:hotpink;
+  font-weight:bold;
+  letter-spacing:4px;
+  text-align:left;
+  margin:0;
+  padding:0;
+  text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#parts_SIGNUP h3{
+  background:white;
+}
+
+#parts_SIGNUP h3 i{
+  display:inline;
+  font-size:100%;
+}
+
+#parts_SIGNUP form{
+  padding:20px;
+  text-align:left;
+  background:white;
+  border-radius:10px;
+  border:2px solid hotpink;
+}
+
+#parts_SIGNUP form label,#parts_LOGIN form label,.design label{
+  display:block;
+  margin:10px 0 10px 4px;
+  text-align:left;
+  font-size:80%;
+  letter-spacing:4px;
+}
+
+#parts_SIGNUP form input[type=text],#parts_SIGNUP form input[type=password],
+#parts_LOGIN form input[type=text],#parts_LOGIN form input[type=password],
+.design input[type=text],.design input[type=password],
+.design textarea{
+  padding:10px;
+  display:block;
+  outline:0;
+  border:1px solid #ccc;
+  min-width:100%;
+  -webkit-transition-property:border,color;  
+  -webkit-transition-duration:0.5s;
+  -webkit-transition-timing-function:ease-in-out;
+  box-shadow:0 0 10px rgba(0,0,0,0.1) inset;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing:3px;
+  color:hotpink;
+  resize:none;
+}
+
+.design textarea{
+  min-height:100px;
+}
+
+#parts_SIGNUP form input[type=text],#parts_SIGNUP form input[type=password],
+.design input[type=text],.design input[type=password],
+.design textarea{
+  font-size:16px;
+  word-break:break-all;
+}
+
+#parts_LOGIN form input[type=text],#parts_LOGIN form input[type=password]{
+  font-size:12px;
+}
+
+#parts_SIGNUP form input[type=text]:focus,#parts_SIGNUP form input[type=password]:focus,
+#parts_LOGIN form input[type=text]:focus,#parts_LOGIN form input[type=password]:focus,
+.design input[type=text]:focus,.design input[type=password]:focus,
+.design textarea:focus,.Cardnum:focus{
+  border:1px solid hotpink;
+  color:deeppink;
+}
+
+#parts_SIGNUP form i,#parts_LOGIN form i,
+.design i,.design i{
+  margin-right:4px;
+}
+
+#parts_SIGNUP input[type=submit],
+.design input[type=submit]{
+  display:block;
+  margin:10px 0;
+  padding:10px;
+  width:100%;
+  border:1px solid transparent;
+  background:hotpink;
+  -webkit-transition-property:background;  
+  -webkit-transition-duration:0.2s;
+  -webkit-transition-timing-function:ease-in-out;
+  -webkit-appearance: none;
+  color:white;
+  box-shadow:0 0 4px #ccc;
+}
+
+#parts_LOGIN input[type=submit]{
+  display:block;
+  padding:8px;
+  width:100%;
+  border:1px solid transparent;
+  background:hotpink;
+  -webkit-transition-property:background;  
+  -webkit-transition-duration:0.2s;
+  -webkit-transition-timing-function:ease-in-out;
+  -webkit-appearance: none;
+  color:white;
+}
+
+#parts_SIGNUP input[type=submit]:hover,#parts_LOGIN input[type=submit]:hover,
+.design input[type=submit]:hover{
+  background:deeppink;
+}
+
+.Cardnum{
+  width:60px !important;
+  max-width:60px !important;
+  padding:10px;
+  outline:0;
+  border:1px solid #ccc;
+  -webkit-transition-property:border;  
+  -webkit-transition-duration:0.5s;
+  -webkit-transition-timing-function:ease-in-out;
+  box-shadow:0 0 10px rgba(0,0,0,0.1) inset;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing:3px;
+  color:deeppink;
+  resize:none;
+}
+
+#parts_SIGNUP #termsofuse{
+  margin-bottom:10px;
+  padding:10px;
+  border:1px solid hotpink;
+  height:150px;
+  overflow:scroll;
+  letter-spacing:4px;
+  font-size:80%;
+}
+
+#parts_BOTTOM{
+  width:100%;
+  background:#ead6ff;
+  box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+  color:purple;
+  text-align:left;
+  font-size:80%;
+}
+
+#parts_BOTTOM a{
+  display:block;
+  padding:4px 10px;
+  text-decoration:none;
+}
+
+#parts_BOTTOM a:hover{
+  background:mediumorchid;
+  color:white;
+}
+
+#parts_BOTTOM .subtitled{
+  font-size:200%;
+}
+
+#parts_TERMS{
+  width:100%;
+  background:url('http://free.stella-mail.com/picture/purestripe.png');
+  box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+  color:darkorange;
+  text-align:left;
+}
+
+.content{
+  text-align:left;
+  padding:30px 0;
+  box-shadow:0 0 2px 2px rgba(200,200,200,0.5) inset;
+  background:url('http://free.stella-mail.com/picture/candystripe.png');
+}
+
+.headtypo h3{
+  margin:0;
+  padding:0;
+  font-size:180%;
+  letter-spacing:3px;
+  text-shadow: 0px 1px 1px #ccc;
+}
+
+.headtypo h4{
+  margin:0;
+  padding:0;
+  font-size:60%;
+}
+
+.whitearea{
+  background:white;
+  border:1px solid #ccc;
+  padding:20px;
+}
+
+.whitearea dt{
+  margin:20px 0;
+  border:1px solid orange;
+  padding:4px 16px;
+  background:url('http://hibana.xii.jp/bg/dot/006/G2.png');
+  letter-spacing:6px;
+  font-weight:bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.whitearea dd{
+  margin:10px 0 10px 16px;
+  letter-spacing:2px;
+  color:#666;
+}
+
+.whitespace a{
+  text-decoration:none;
+  color:blue;
+}
+
+.whitespace a:hover{
+  color:deeppink;
+}
+
+/* 2: Typography */
+
+h1{
+  font-size:50px;
+  font-family: 'Share Tech Mono', sans-serif;
+  color:darkorange;
+  margin:0;
+  padding:0;
+}
+
+h2{
+  font-size:10px;
+  font-family: 'Share Tech Mono', sans-serif;
+  color:darkorange;
+  margin:0;
+  padding:0;
+}
+
+a{
+  color:hotpink;
+  text-decoration:none;
+}
+
+a:hover{
+  color:deeppink;
+}
+
+.align-center{
+  text-align:center;
+}
+
+.align-left{
+  text-align:left;
+}
+
+.align-right{
+  text-align:right;
+}
+
+.float-right{
+  float:right;
+  display: table-cell;
+  vertical-align:middle;
+  height:100%;
+}
+
+.float-left{
+  float:left;
+  display: table-cell;
+  vertical-align:middle;
+  height:100%;
+}
+
+.font-small{
+  font-size:75%;
+}
+
+.clearfix{
+  clear:both;
+}
+
+.id{
+  font-family: 'Share Tech Mono', sans-serif;
+  font-weight:bold;
+  color:orange;
+}
+
+.error{
+  padding:0 10px;
+  background:lemonchiffon;
+  letter-spacing:4px;
+  font-size:70%;
+  color:red;
+  border-radius:4px;
+}
+
+dl{
+  font-size:80%;
+}
+
+dt{
+  font-weight:bold;
+  padding-left:10px;
+  border-left:5px solid darkorange;
+}
+
+dd{
+  padding:20px 0;
+}
+
+dd > p i{
+  color:royalblue;
+}
+
+.typebutton{
+  font-size:50%;
+  margin:0 0 0 10px;
+  padding:3px 10px;
+  color:white;
+  border-radius:4px;
+  vertical-align:middle;
+}
+
+.typebutton:hover{
+  opacity:0.5;
+}
+
+.beginners, .draft{
+  background:mediumseagreen;
+}
+
+.standard, .reserved{
+  background:hotpink;
+}
+
+.packet, .sent{
+  background:darkorange;
+}
+
+.info{
+  display:block;
+  font-size:90%;
+  color:darkorange;
+  word-break:break-all;
+}
+
+/* 3: Interface */
+
+.button{
+  padding:8px 20px;
+  color:#ffffff;
+  text-align:center;
+  text-decoration:none;
+  border-radius:4px;
+  box-shadow:0 0 2px 2px rgba(200,200,200,0.5);
+}
+
+.button:hover{
+  text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+  cursor:pointer; /* temp */
+  color:white;
+}
+
+.button-large{
+  padding:20px;
+  font-size:200%;
+  border-radius:10px;
+  box-shadow:1px 1px 10px rgba(0,0,0,0.8);
+}
+
+.button-inline{
+  margin-left:30px;
+  display:inline-block;
+}
+
+.button-inline:nth-child(1){
+  margin-left:0;
+}
+
+.button-block{
+  display:block;
+}
+
+.button-orange{
+  background:orange;
+  border-bottom:2px solid transparent;
+}
+
+.button-orange:hover{
+  background:darkorange;
+  border-bottom:2px solid red;
+}
+
+.button-red{
+  background:crimson;
+}
+
+.button-red:hover{
+  background:red;
+  color:white;
+}
+
+table#list, table.list{
+  border-collapse:collapse;
+  margin:40px 0;
+  width:100%;
+  border-radius:10px;
+}
+
+table#list th,table.list th{
+  border:2px orange solid;
+  width:20%;
+  padding:10px;
+  background:linen;
+  vertical-align:middle;
+}
+
+table#list td,table.list td{
+  border:2px orange solid;
+  padding:10px;
+  width:20%;
+  vertical-align:top;
+  background:white;
+  color:#666;
+}
+
+table#list tr:nth-child(2n-1) th,
+table.list tr:nth-child(2n-1) th{
+  background:bisque;
+}
+
+.multitable{
+  width:100%;
+  font-size:90%;
+  border:1px solid #ccc;
+  border-radius:8px;
+  line-height:1.5em;
+  border-collapse:collapse;
+  word-break:break-all;
+  box-shadow:0 0 4px #ccc;
+}
+
+.multitable strong{
+  color:seagreen;
+}
+
+.multitable tr{
+  border-bottom:1px solid #ccc;
+}
+
+.multitable th i{
+  color:#333;
+}
+
+.multitable th,td{
+  padding:10px;
+}
+
+.multitable tr th:nth-last-child(1),
+.multitable tr td:nth-last-child(1){
+  width:6em;
+  padding:0;
+}
+
+.multitable tr th:nth-last-child(1) i,
+.multitable tr td:nth-last-child(1) i{
+  margin:0 4px;
+}
+
+.multitable th{
+  background:url('http://free.stella-mail.com/picture/graystripe.png');
+}
+
+.multitable td{
+  background:white;
+}
+
+.timestamp{
+  width:11.5em;
+}
+
+.minimize{
+  width:9em;
+}
+
+.exminimize{
+  width:5em;
+}
+
+.multitable a{
+  color:#666;
+}
+
+.multitable a:hover{
+  color:deeppink;
+}
+
+.multicolumn{
+  margin:10px 0 20px 0;
+  padding:0 15px;
+  background:white;
+  width:100%;
+  font-size:90%;
+  border:1px solid #ccc;
+  border-radius:8px;
+  line-height:1.5em;
+  word-break:break-all;
+  box-shadow:0 0 4px #ccc;
+}
+
+.block{
+  display:block;
+  margin:0 10px;
+}
+
+.function{
+  display:block;
+}
+
+.function div{
+  border:2px darkblue solid;
+  padding:10px;
+  margin-bottom:20px;
+  border-radius:10px;
+  background:white;
+  vertical-align:middle;
+  min-height:200px;
+}
+
+.function div h4{
+  margin:0 0 4px 0;
+  color:darkslateblue;
+  font-size:16px;
+  letter-spacing:4px;
+}
+
+.function div h4:hover{
+  color:blue;
+  cursor:default;
+}
+
+.function div h4 i{
+  display:block;
+  font-size:300%;
+  margin:10px;
+}
+
+#layer{
+  position: absolute;
+  z-index: 100;
+  background: #000000;
+  top: 0px;
+  left: 0px;
+  filter: alpha(opacity=0);
+  opacity: 0.0;
+  display:none;
+}
+
+.hide{
+  display:none;
+}
+
+/* 4.media queries */
+
+@media only screen and (max-width: 739px) {
+  #logo_container{
+    font-size:80%;
+  }
+  .title{
+    text-align:center;
+  }
+  .whitearea dd{
+    margin:10px 0;
+  }
+  ul#menubar li{
+    font-size:60%;
+    margin:0;
+  }
+  dd{
+    margin:0;
+  }
+  .headtypo h3{
+    letter-spacing:0;
+    font-size:120%;
+  }
+  table.multitable{
+    font-size:80%;
+  }
+}
